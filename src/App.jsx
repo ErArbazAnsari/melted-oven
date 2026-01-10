@@ -200,8 +200,8 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="footer">
-        <p>© 2025 Melted Oven — Baking Happiness Since 2020 | All Rights Reserved</p>
-        <p className="footer-contact">📞 +91 1234 567 890 | 📧 hello@meltedoven.com</p>
+        <p>© 2025 Melted Oven — Baking Happiness Since 2019 | All Rights Reserved</p>
+        <p className="footer-contact">📞 +91 8178778538 | 📧 Officialmeltedoven@gmail.com</p>
       </footer>
     </div>
   );
