@@ -59,7 +59,7 @@ export default function App() {
       {/* CTA BUTTONS */}
       <div className="cta-section">
         <a
-          href="https://wa.me/911234567890"
+          href="https://wa.me/+918178778538"
           target="_blank"
           rel="noreferrer"
           className="btn btn-whatsapp"
