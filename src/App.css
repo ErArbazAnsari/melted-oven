@@ -1,0 +1,352 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.page-container {
+  width:100vw;
+  min-height: 100vh;
+  background: #000000;   /* PURE BLACK */
+  color: white;          /* so your text stays visible */
+}
+
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 100px;
+}
+.logo {
+  height: 70px;                 /* adjust size as you want */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.15);       /* zoom effect */
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));
+}
+
+.company-name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.company-name {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  transition: transform 0.3s ease, letter-spacing 0.3s ease;
+  cursor: pointer;
+}
+
+.company-name:hover {
+  transform: scale(1.08);
+  letter-spacing: 1px;
+}
+
+.company-tagline {
+  font-size: 16px;
+  color: #ccc;
+  margin-top: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.company-tagline:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+
+/* VIDEO */
+.video-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  background-color: aliceblue;
+  height: 400px;
+}
+
+
+.tagline {
+  font-size: 14px;
+  color: #cccccc;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  opacity: 0;
+  transform: translateY(8px);
+  animation: taglineFade 1.4s ease forwards;
+}
+
+@keyframes taglineFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.center-video {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.whatsapp-btn {
+  display: block;
+  width: 200px;
+  margin: 15px auto 0;      /* centers it below video */
+  padding: 12px;
+  background: #25D366;      /* WhatsApp green */
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.whatsapp-btn:hover {
+  background: #1eb857;
+  transform: translateY(-2px);
+}
+
+/* Initial Fade + Slide Animation */
+.whatsapp-btn {
+  display: block;
+  width: 200px;
+  margin: 18px auto 0;
+  padding: 12px;
+  background: #25D366;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+
+  opacity: 0;
+  transform: translateY(10px);
+  animation: btnEnter 0.9s ease forwards;
+}
+
+/* Entry Animation */
+@keyframes btnEnter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle Pulse Glow (premium) */
+.whatsapp-btn {
+  box-shadow: 0 0 0 rgba(37, 211, 102, 0.4);
+  animation: btnPulse 3s infinite ease-in-out;
+}
+
+@keyframes btnPulse {
+  0% {
+    box-shadow: 0 0 0px rgba(37, 211, 102, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 14px rgba(37, 211, 102, 0.55);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(37, 211, 102, 0.3);
+  }
+}
+
+/* Hover Pop */
+.whatsapp-btn:hover {
+  background: #1ebe57;
+  transform: translateY(-3px);
+  transition: 0.25s ease;
+}
+.whatsapp-btn {
+  display: block;
+  width: 200px;
+  margin: 18px auto 0;
+  padding: 12px;
+  background: #25D366;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+
+  /* Combined Animations */
+  opacity: 0;
+  transform: translateY(10px);
+  animation:
+    btnEnter 0.9s ease forwards,
+    btnPulse 3s infinite ease-in-out 1s;
+}
+
+@keyframes btnEnter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes btnPulse {
+  0% {
+    box-shadow: 0 0 0px rgba(37, 211, 102, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 14px rgba(37, 211, 102, 0.55);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(37, 211, 102, 0.3);
+  }
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe57;
+  transform: translateY(-3px);
+  transition: 0.25s ease;
+}
+
+
+/* ANIMATED TEXT */
+.animated-text {
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 2s ease;
+}
+
+.line1,
+.line2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  animation: slideUp 1s ease forwards;
+  opacity: 0;
+}
+
+.line2 {
+  animation-delay: 0.5s;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* FORM */
+.form-box {
+  width: 90%;
+  max-width: 350px;
+  margin: 25px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #004bcc;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.social-btn {
+  width: 50px;
+  height: 50px;
+  background: #ffffff1a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+}
+
+/* Hover + zoom animation */
+.social-btn:hover {
+  transform: scale(1.15) translateY(-5px);
+}
+
+/* Brand Colors */
+.whatsapp:hover { background: #25D366; }
+.instagram:hover { background: #E1306C; }
+.facebook:hover { background: #1877F2; }
+.website:hover { background: #00acee; }  /* Clean blue for website */
+
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  color: #555;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
