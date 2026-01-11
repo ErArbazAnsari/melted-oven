@@ -32,8 +32,10 @@ export default function App() {
             {/* HERO SECTION */}
             <Hero />
 
+
             {/* FEATURES SECTION */}
             <Features />
+
 
             {/* VIDEO SECTION */}
             <CTASection />
